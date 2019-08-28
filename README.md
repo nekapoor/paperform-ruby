@@ -35,7 +35,7 @@ submission.list('<uuid>') # this is the uuid of the submission. You can find thi
 
 ```
 
-This will return a list of partially submitted forms. You can also pass an options hash as a second parameter. Check the developer documentation link above for attributes you can send in this options hash.
+This will return a list of submitted forms. You can also pass an options hash as a second parameter. Check the developer documentation link above for attributes you can send in this options hash.
 
 
 ### Partial Submissions
