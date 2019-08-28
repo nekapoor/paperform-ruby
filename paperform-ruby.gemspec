@@ -1,17 +1,16 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "paperform/ruby/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "paperform-ruby"
-  spec.version       = Paperform::Ruby::VERSION
+  spec.version       = "1.0.0"
   spec.authors       = ["Neeraj Kapoor"]
   spec.email         = ["neeraj.kapoor@learntobe.org"]
 
   spec.summary       = %q{A wrapper around the paperform api.}
   spec.description   = %q{A wrapper around the paperform api.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/nekapoor/paperform-ruby"
   spec.license       = "MIT"
 
   # Specify which files should be added to the gem when it is released.
