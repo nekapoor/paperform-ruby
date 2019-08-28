@@ -28,6 +28,5 @@ module Paperform
 
       response.body
     end
-
   end
 end
