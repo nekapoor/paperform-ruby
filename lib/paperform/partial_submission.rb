@@ -9,10 +9,17 @@ module Paperform
     end
 
     def find(id)
+      params = { id: id }
+
+      response = Curl.get(BASE_URL, params) do |http|
+        http.headers['Authorization'] = "Bearer #{token}"
+      end
+
+      response.body
     end
 
     def list(form_id, options = nil)
-      params = { :form => form_id }
+      params = { form: form_id }
       params.merge!(options) if options
 
       response = Curl.get(BASE_URL, params) do |http|
