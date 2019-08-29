@@ -15,7 +15,7 @@ module Paperform
         http.headers['Authorization'] = "Bearer #{token}"
       end
 
-      response.body
+      JSON.parse(response.body)
     end
 
     def list(form_id, options = nil)
@@ -26,7 +26,7 @@ module Paperform
         http.headers['Authorization'] = "Bearer #{token}"
       end
 
-      response.body
+      JSON.parse(response.body)
     end
   end
 end
