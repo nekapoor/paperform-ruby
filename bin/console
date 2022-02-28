@@ -10,5 +10,6 @@ require "paperform"
 # require "pry"
 # Pry.start
 
+client = Paperform::Client.new(token: ENV["PAPERFORM_TOKEN"])
 require "irb"
 IRB.start(__FILE__)

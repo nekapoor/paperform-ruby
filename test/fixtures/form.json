@@ -1,0 +1,28 @@
+{
+  "status": "ok",
+  "results": {
+    "form": {
+      "id": "123",
+      "slug": "string",
+      "custom_slug": "string",
+      "space_id": 0,
+      "title": "string",
+      "description": "string",
+      "cover_image_url": "https://s3-ap-southeast-2.amazonaws.com/paperform/u-22714/1/2019-04-14/58p3u6p/cabinet-clothes-clothes-hanger-996329.jpg",
+      "url": "https://lffa4fxo.paperform.co",
+      "additional_urls": [
+        "http://example.com"
+      ],
+      "live": true,
+      "tags": [
+        "string"
+      ],
+      "submission_count": 0,
+      "created_at": "string",
+      "updated_at": "string",
+      "account_timezone": "string",
+      "created_at_utc": "2019-08-24T14:15:22Z",
+      "updated_at_utc": "2019-08-24T14:15:22Z"
+    }
+  }
+}

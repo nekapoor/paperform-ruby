@@ -1,0 +1,14 @@
+{
+  "status": "ok",
+  "results": {
+    "fields": [
+      {
+        "key": "3jbh8",
+        "custom_key": "email",
+        "title": "Email address",
+        "description": "Enter your email address",
+        "type": "email"
+      }
+    ]
+  }
+}
