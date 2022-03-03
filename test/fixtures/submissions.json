@@ -1,0 +1,81 @@
+{
+  "status": "ok",
+  "results": {
+    "submissions": [
+      {
+        "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+        "form_id": "46af4ef5-2c18-4098-9bc5-c048fb90b843",
+        "data": {
+          "KEY": "string"
+        },
+        "device": {
+          "type": "string",
+          "device": "string",
+          "platform": "string",
+          "browser": "string",
+          "embedded": true,
+          "url": "http://example.com",
+          "user_agent": "string",
+          "utm_source": "string",
+          "utm_medium": "string",
+          "utm_campaign": "string",
+          "utm_term": "string",
+          "utm_content": "string",
+          "ip_address": "string"
+        },
+        "charge": {
+          "products": {
+            "property1": {
+              "price": 0,
+              "total": 0,
+              "quantity": 0,
+              "summary": "string"
+            },
+            "property2": {
+              "price": 0,
+              "total": 0,
+              "quantity": 0,
+              "summary": "string"
+            }
+          },
+          "summary": "string",
+          "discount": 0,
+          "discounted_subscriptions": [
+            "string"
+          ],
+          "coupon": true,
+          "total": 0,
+          "tax": 0,
+          "tax_percentage": 0,
+          "processing_fee": 0,
+          "authorize": true,
+          "receipt_email": "user@example.com",
+          "customer": {
+            "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08"
+          },
+          "charge": "string",
+          "payment_source_id": 0,
+          "payment_source_service": "string",
+          "live": true
+        },
+        "pdfs": {
+          "property1": {
+            "url": "http://example.com",
+            "filename": "string"
+          },
+          "property2": {
+            "url": "http://example.com",
+            "filename": "string"
+          }
+        },
+        "created_at": "string",
+        "account_timezone": "string",
+        "created_at_utc": "2019-08-24T14:15:22Z"
+      }
+    ]
+  },
+  "total": 0,
+  "has_more": true,
+  "limit": 0,
+  "skip": 0
+}

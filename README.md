@@ -22,41 +22,80 @@ Or install it yourself as:
 
 Head to the [developer documentation page](https://paperform.co/developer/api-v1-documentation/) on the paperform website for general info about the api. To get started, you'll need to generate a token. This will serve as the bearer token passed with every request you send to Paperform. Visit [this page](https://paperform.co/account/developer) in your paperform account to generate one. Note that you'll need to have a Pro or Agency account in order to use the API. Store this somewhere in your rails app (like a .env file or something). From there, you can use the gem like this:
 
-### Submissions
+
+## Auth
+
+After we have gotten our token, we just need to initialize the client
 
 ```ruby
-require 'paperform'
-
-submission = Paperform::Submission.new(ENV['PAPERFORM_TOKEN']) # assuming I stored my paperform token in the env variable PAPERFORM_TOKEN
-
-submission.list('sample-form') # this is the slug prefix in your paperform url. Ie, sample-form.paperform.co.
-
-submission.list('<uuid>') # this is the uuid of the submission. You can find this value for a given submission in your paperform account
-
+ client = Paperform::Client.new(token: token)
 ```
 
-This will return a list of submitted forms. You can also pass an options hash as a second parameter. Check the developer documentation link above for attributes you can send in this options hash.
+Every request returns a JSON body response
 
+## Forms
+```ruby
+client.forms
+```
 
-### Partial Submissions
+You can also pass in parameters that you need.
 
 ```ruby
-require 'paperform'
+client.forms(limit: 200, skip: 3)
+``
 
-partial_sub = Paperform::PartialSubmission.new(ENV['PAPERFORM_TOKEN']) # assuming I stored my paperform token in the env variable PAPERFORM_TOKEN
+## Form
 
-partial_sub.list('sample-form') # this is the slug prefix in your paperform url. Ie, sample-form.paperform.co.
-
-partial_sub.list('<uuid>') # this is the uuid of the submission. You can find this value for a given submission in your paperform account
-
+```ruby
+client.form(slug_or_id)
 ```
 
-This will return a list of partially submitted forms. You can also pass an options hash as a second parameter. Check the developer documentation link above for attributes you can send in this options hash.
+## Form Fields
+
+```ruby
+client.form_fields(slug_or_id)
+```
+
+## Partial Submissions
+
+```ruby
+client.partial_submissions
+```
+You can also pass in parameters that you need.
+
+```ruby
+client.partial_submissions(limit: 200, skip: 3)
+```
+
+## Partial Submission
+
+```ruby
+client.partial_submission(slug_or_id)
+```
+
+
+## Submissions
+
+```ruby
+client.submissions
+```
+You can also pass in parameters that you need.
+
+```ruby
+client.submissions(limit: 200, skip: 3)
+```
+
+## Submission
+
+```ruby
+client._submission(slug_or_id)
+```
 
 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/nekapoor/paperform-ruby.
+
 
 ## License
 

@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "paperform-ruby"
-  spec.version       = "1.0.0"
+  spec.version       = "2.0.0"
   spec.authors       = ["Neeraj Kapoor"]
   spec.email         = ["neeraj.kapoor@learntobe.org"]
 
@@ -22,7 +22,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.16"
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "bundler", "~> 2.3.4"
+  spec.add_development_dependency "rake", "~> 13.0"
+  spec.add_development_dependency "minitest", "~> 5.0"
+
+  spec.add_dependency "faraday", "~> 1.7"
+  spec.add_dependency "faraday_middleware", "~> 1.1"
 end

@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "results": {
+    "partial-submission": {
+      "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+      "form_id": "46af4ef5-2c18-4098-9bc5-c048fb90b843",
+      "data": {
+        "KEY": "string"
+      },
+      "last_answered": "string",
+      "submitted_at": "string",
+      "updated_at": "string",
+      "created_at": "string",
+      "account_timezone": "string",
+      "submitted_at_utc": "2019-08-24T14:15:22Z",
+      "created_at_utc": "2019-08-24T14:15:22Z",
+      "updated_at_utc": "2019-08-24T14:15:22Z"
+    }
+  }
+}
