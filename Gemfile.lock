@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    paperform-ruby (2.0.0)
+    paperform-ruby (2.0.1)
       faraday (~> 1.7)
       faraday_middleware (~> 1.1)
 
