@@ -23,7 +23,7 @@ class ClientTest < MiniTest::Test
 
   def test_partial_submissions
     client = setup_stub("partial-submissions", "test/fixtures/partial_submissions.json")
-    assert_equal "ok", client.partial_submissions["status"]
+    assert_equal "ok", client.partial_submissions(form: '46af4ef5-2c18-4098-9bc5-c048fb90b843')["status"]
   end
 
   def test_partial_submission

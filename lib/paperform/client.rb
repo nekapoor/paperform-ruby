@@ -24,8 +24,8 @@ module Paperform
     end
 
     # GET https://paperform.co/developer/api-v1-documentation/#operation/List%20Partial%20Submissions
-    def partial_submissions(**params)
-      handle_response connection.get('partial-submissions')
+    def partial_submissions(form:, **params)
+      handle_response connection.get('partial-submissions', {form: form}.merge(params))
     end
 
 
