@@ -59,7 +59,7 @@ client.form_fields(slug_or_id)
 ## Partial Submissions
 
 ```ruby
-client.partial_submissions
+client.partial_submissions(form: form)
 ```
 You can also pass in parameters that you need.
 
@@ -77,18 +77,18 @@ client.partial_submission(slug_or_id)
 ## Submissions
 
 ```ruby
-client.submissions
+client.submissions(form: form)
 ```
 You can also pass in parameters that you need.
 
 ```ruby
-client.submissions(limit: 200, skip: 3)
+client.submissions(form: form, limit: 200, skip: 3)
 ```
 
 ## Submission
 
 ```ruby
-client._submission(slug_or_id)
+client.submission(slug_or_id)
 ```
 
 
